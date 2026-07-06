@@ -15,6 +15,10 @@ div {
     padding: 1rem;
 }
 
+p {
+    vertical-align: middle;
+}
+
 span {
     color: navy;
     background-color: lightblue;
@@ -39,4 +43,9 @@ code {
 .question {
     background-color: #3d503d;
     color: #fff;
+}
+
+em {
+    color: orange;
+    background-color: grey;
 }
