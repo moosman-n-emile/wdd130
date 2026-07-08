@@ -8,7 +8,7 @@
   "editor.defaultFormatter": "vscode.html-language-features",
   "editor.minimap.enabled": false,
   "editor.linkedEditing": true,
- 
+
   "editor.quickSuggestions": {
     "comments": "off",
     "strings": "off",
@@ -18,29 +18,33 @@
   "editor.suggestOnTriggerCharacters": false,
   "editor.hover.enabled": false,
   "editor.inlineSuggest.enabled": false,
+
   "html.format.enable": true,
   "html.format.maxPreserveNewLines": 2,
   "html.format.wrapLineLength": 100,
   "html.format.wrapAttributesIndentSize": 2,
+
   "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features",
-    },
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
   "css.format.enable": true,
   "css.format.maxPreserveNewLines": 2,
   "css.format.spaceAroundSelectorSeparator": true,
   "css.format.newlineBetweenRules": true,
+
   "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features",
-    }
-  // Git settings for beginners - simplify source control
-  "git.enableSmartCommit": true, // automatically staged
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+
+  // Git settings for beginners
+  "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
-  // "git.postCommitCommand": "sync",
   "scm.defaultViewMode": "list",
   "scm.repositories.visible": 0,
-  
-  // Explorer settings - show only folders view
+
+  // Explorer settings
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.compactFolders": false,
@@ -51,13 +55,13 @@
   "timeline.showView": false,
   "explorer.autoOpenDroppedFile": false,
   "workbench.tree.indent": 25,
-  
-  // Live and Live/Five Server settings
+
+  // Live Server / Five Server
   "fiveServer.port": 5501,
   "fiveServer.injectBody": false,
-  "liveServer.settings.port": 5504/
+  "liveServer.settings.port": 5504,
 
-  // disable copilot chat
+  // Disable Copilot Chat
   "chat.agent.enabled": false,
   "chat.commandCenter.enabled": false,
   "inlineChat.accessibleDiffView": "off",
