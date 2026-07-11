@@ -41,7 +41,19 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+    /* white text – make sure there is enough contrast with the background-color */
+}
+
+Style the article using absolute positioning and a style of your choice. nav,
 p,
 section,
 article {
@@ -52,7 +64,18 @@ article {
 /* Class Selectors */
 .hero {
     background-image: url('../images/hero.jpg');
-    /* https: //byui-cse.github.io/wdd130-ww-course/resources/images/rafting12_1024.jpg */
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
 }
 
 .socialmedia a {
