@@ -55,7 +55,6 @@ article {
 }
 
 .hero {
-    /* background-image: url('../images/hero.jpg'); */
     position: relative;
 }
 
@@ -67,6 +66,7 @@ article {
 
 .hero h1 {
     position: absolute;
+    margin: 15px;
 }
 
 .hero article {
