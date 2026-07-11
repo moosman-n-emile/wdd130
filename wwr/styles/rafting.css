@@ -37,7 +37,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #ffffff;
     /* white text – make sure there is enough contrast with the background-color */
 }
 
@@ -49,7 +49,15 @@ article {
     padding: 8px;
 }
 
+article {
+    position: absolute;
+}
+
 /* Class Selectors */
+.socialmedia a {
+    text-decoration: none;
+}
+
 .hero {
     background-image: url('../images/hero.jpg');
     position: relative;
@@ -64,8 +72,4 @@ article {
 .hero article img {
     float: right;
     width: 125px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
