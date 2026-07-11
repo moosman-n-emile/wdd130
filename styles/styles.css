@@ -1,9 +1,13 @@
+:root {
+    --background-color: #00008B;
+}
+
 main {
     max-width: 840px;
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--background-color);
     padding: 10px;
 }
 
@@ -14,7 +18,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--background-color);
 }
 
 main img {
