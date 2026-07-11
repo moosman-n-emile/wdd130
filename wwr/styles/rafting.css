@@ -1,0 +1,60 @@
+:root {
+    --body-font: "Bricolage Grotesque",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    ;
+    --accent1-color: rgb(2, 19, 130);
+    --heading-font: --body-font: "Syne", system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    ;
+    --primary-color: rgba(137, 2, 2, 0.819);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Class Selectors */
+.hero {
+    background-image: url('../images/hero.jpg');
+    /* https: //byui-cse.github.io/wdd130-ww-course/resources/images/rafting12_1024.jpg */
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
