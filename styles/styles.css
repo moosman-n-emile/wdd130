@@ -2,13 +2,19 @@
     --background-color: #00008B;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     max-width: 840px;
 }
 
 nav {
     background-color: var(--background-color);
-    padding: 10px;
+    padding: 15px;
 }
 
 nav a {
@@ -26,21 +32,18 @@ main img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
+    /* margin: 0 0 1rem 1rem; */
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
-p {
-    padding: 0;
+main p {
+    width: 28rem;
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid #7225F5;
-    padding: 1rem;
-    background-color: #9DFAD0;
-    color: #000000;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -48,8 +51,25 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 112px;
+    color: #009929;
+}
+
 footer {
     margin-top: 3rem;
     border-top: 1rem;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid #7225F5;
+    padding: 1rem;
+    width: 20rem;
+    background-color: #9DFAD0;
+    color: #000000;
 }
