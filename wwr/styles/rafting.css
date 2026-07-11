@@ -1,19 +1,7 @@
 :root {
-    --body-font: "Bricolage Grotesque",
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        "Helvetica Neue",
-        Arial,
-        sans-serif;
-    ;
+    --body-font: Tahoma, sans-serif;
     --accent1-color: rgb(2, 19, 130);
-    --heading-font: --body-font: "Syne", system-ui, -apple-system,
-        BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    ;
+    --heading-font: --body-font: Trebuchet MS;
     --primary-color: rgba(137, 2, 2, 0.819);
 }
 
