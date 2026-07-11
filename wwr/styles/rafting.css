@@ -49,10 +49,6 @@ article {
     padding: 8px;
 }
 
-article {
-    position: absolute;
-}
-
 /* Class Selectors */
 .socialmedia a {
     text-decoration: none;
@@ -70,6 +66,7 @@ article {
 }
 
 .hero article img {
+    position: absolute;
     float: right;
     width: 125px;
     box-shadow: 0 0 30px gray;
