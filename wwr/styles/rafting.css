@@ -65,8 +65,11 @@ article {
     height: auto;
 }
 
-.hero article img {
+.hero article {
     position: absolute;
+}
+
+.hero article img {
     float: right;
     width: 125px;
     box-shadow: 0 0 30px gray;
