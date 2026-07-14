@@ -1,5 +1,6 @@
 :root {
     --background-color: #000080;
+    --text-color: #ffffff;
 }
 
 * {
@@ -8,16 +9,21 @@
     box-sizing: border-box;
 }
 
-header,
-.grid footer {
-    max-width: 840px;
-    margin: 0 auto;
-    text-decoration: none;
+head {
+    display: block;
 }
 
 .grid {
     display: grid;
     align-items: center;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+    text-decoration: none;
 }
 
 main {
@@ -47,6 +53,7 @@ nav a {
 h1 {
     color: var(--background-color);
     border-bottom: solid rgba(255, 242, 55, 0.705);
+    text: ;
 }
 
 main img {
@@ -67,7 +74,6 @@ aside {
     text-align: center;
     position: relative;
     width: 20rem;
-    position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -90,12 +96,25 @@ footer {
     text-align: center;
 }
 
+main ul {
+    width: 30%;
+    height: auto;
+    margin-left: 2rem;
+}
+
 /* Class Selectors */
 .box {
     margin: 1rem;
-    border: 1px solid #7225F5;
+    border: 2px solid #ab89e6;
     padding: 1rem;
     width: 20rem;
-    background-color: #9DFAD0;
-    color: #000000;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.box a {
+    width: 20rem;
+    text-decoration: none;
+    color: var(--text-color);
 }
