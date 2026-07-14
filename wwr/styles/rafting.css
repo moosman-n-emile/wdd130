@@ -53,9 +53,9 @@ article {
     text-decoration: none;
 }
 
-social media img {
-    width: 20px;
-    height: 20px;
+.socialmedia img {
+    width: 2.5rem;
+    height: auto;
 }
 
 .hero {
@@ -84,4 +84,12 @@ social media img {
     float: right;
     width: 90px;
     box-shadow: 0 0 30px gray;
+}
+
+.icon {
+    width: 6rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
 }
