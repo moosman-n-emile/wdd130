@@ -1,12 +1,15 @@
-:root {
-    --background-color: #000080;
-    --text-color: #ffffff;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --heading-background-color: darkblue;
+    --heading-text-color: #fff;
+    --heading-font: Lato, arial, sans-serif;
+    --background-color: #000080;
+    --text-color: #ffffff;
 }
 
 head {
@@ -48,11 +51,12 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
     color: var(--background-color);
-    border-bottom: solid rgba(255, 242, 55, 0.705);
+    border-bottom: 2px solid rgba(255, 242, 55, 0.705);
     text: ;
 }
 
@@ -81,6 +85,9 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 20px goldenrod;
 }
 
 aside h2 {
@@ -117,4 +124,10 @@ main ul {
     width: 20rem;
     text-decoration: none;
     color: var(--text-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid black;
 }
