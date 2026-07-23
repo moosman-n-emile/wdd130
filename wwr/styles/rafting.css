@@ -161,24 +161,21 @@ article {
 }
 
 .hero article {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
     position: absolute;
-    color: #ffffff;
+    width: 94%;
     background-color: blueviolet;
+    color: #ffffff;
     font-size: 1.25rem;
     border-radius: 8px;
+    padding: 10px;
 }
 
 .hero article img {
-    /* Moves the image to the right */
-    order: 2;
+    float: right;
     width: 90px;
+    margin-left: 15px;
     box-shadow: 0 0 10px #eeff00;
-    /* Prevents the image from shrinking */
-    flex-shrink: 0;
+    border-radius: 6px;
 }
 
 .hero article p {
