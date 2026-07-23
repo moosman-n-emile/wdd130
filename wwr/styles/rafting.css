@@ -23,6 +23,20 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "icon nav";
+    background-color: bisque;
+    padding: 2px;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid black;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -45,11 +59,42 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px;
+    margin: 8px;
+    padding: 4px;
 }
 
 /* Class Selectors */
+.navigation {
+    grid-area: nav;
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+.navigation li {
+    flex: 1 1 0;
+}
+
+.navigation a {
+    display: block;
+    width: 100%;
+    padding: 6px 6px;
+    background-color: lightcyan;
+    color: navy;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.navigation a:hover {
+    background-color: darkred;
+    color: white;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -90,8 +135,12 @@ article {
 }
 
 .icon {
-    width: 6rem;
+    grid-area: icon;
+    justify-self: flex-end;
+    width: 5rem;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
