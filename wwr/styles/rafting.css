@@ -351,13 +351,13 @@ form {
     border-radius: 8px;
 }
 
-input,
+/* input,
 textarea,
 select,
 button {
     width: 450px;
     margin-bottom: 1.5rem;
-}
+} */
 
 textarea {
     column-span: 10;
