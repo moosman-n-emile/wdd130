@@ -45,44 +45,55 @@
                   referrerpolicy="strict-origin-when-cross-origin">
                 </iframe>
             </div>
+
             <form class="form">
-                <label class="text_label">
-                    Name
-                    <input type="text" id="name" name="name" placeholder="Enter Name">
-                </label>
+                <fieldset class="text_label">
+                    <label>
+                        Name
+                        <input type="text" id="name" name="name" placeholder="Enter Name">
+                    </label>
 
-                <label class="text_label">
-                    Email
-                    <input type="email" id="email" name="email" placeholder="Enter Email">
-                </label>
+                    <label>
+                        Email
+                        <input type="email" id="email" name="email" placeholder="Enter Email">
+                    </label>
+                </fieldset>
 
+                <fieldset class="radio">
+                    <div class="radio_message">Message purpose</div>
 
-                <p>Message purpose</p>
+                    <div class="radio_buttons">
+                        <label>
+                            <input type="radio" id="general" name="purpose" value="general" checked>
+                            General Inquiry
+                        </label>
 
-                <label>
-                    <input type="radio" id="general" name="purpose" value="general" checked>
-                    General Inquiry
-                </label><br>
+                        <label>
+                            <input type="radio" id="social" name="purpose" value="social">
+                            Reservation Question
+                        </label>
 
-                <label>
-                    <input type="radio" id="social" name="purpose" value="social">
-                    Reservation Question
-                </label><br>
+                        <label>
+                            <input type="radio" id="search" name="purpose" value="search">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </fieldset>
 
-                <label>
-                    <input type="radio" id="search" name="purpose" value="search">
-                    Website Suggestion
-                </label>
+                <fieldset>
+                    <label for="message" class="message_label">Message</label>
+                    <textarea id="message" name="message" placeholder="Type here"></textarea>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Type here"></textarea>
+                    <div class="subscription">
+                        <input type="checkbox" id="subscribe" name="subscribe" checked>
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
 
-                <input type="checkbox" id="subscribe" name="subscribe" checked>
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-
-                <button type="submit">Get In Touch!</button>
+                    <button type="submit">Get In Touch!</button>
+                </fieldset>
             </form>
         </section>
+
         <section class="employee">
             <h2>We Are Here to Serve You</h2>
             <figure>
