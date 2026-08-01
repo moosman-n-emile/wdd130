@@ -175,6 +175,7 @@ article {
     width: 90px;
     margin-left: 15px;
     box-shadow: 0 0 10px #eeff00;
+    border: 2px solid blue;
     border-radius: 6px;
 }
 
@@ -215,7 +216,7 @@ section:nth-of-type(1) img {
     width: 120px;
     height: auto;
     border-radius: 8px;
-    border: 1px solid greenyellow;
+    border: 2px solid blue;
     margin-top: 2px;
     margin-bottom: 2px;
 }
@@ -266,6 +267,13 @@ section:nth-of-type(2) img {
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid black;
+}
+
+section.employee img {
+    width: 110px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid blue;
 }
 
 section:nth-of-type(2) figcaption {
