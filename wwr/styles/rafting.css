@@ -119,8 +119,8 @@ article {
     display: block;
     width: 100%;
     padding: 6px 6px;
-    background-color: lightcyan;
-    color: navy;
+    background-color: var(--primary-color);
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
@@ -130,19 +130,12 @@ article {
     border: 1px solid black;
 }
 
-.navigation a:hover {
-    background-color: darkred;
-    color: white;
-}
-
 .hero {
     grid-area: hero;
     position: relative;
     display: flex;
     flex-direction: column;
-    /* Push content to the bottom */
     justify-content: flex-end;
-    /* Center horizontally */
     align-items: center;
     margin-bottom: 1px;
 }
@@ -152,7 +145,7 @@ article {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid #000000;
 }
 
 address {
@@ -178,8 +171,8 @@ address {
     float: right;
     width: 90px;
     margin-left: 15px;
-    box-shadow: 0 0 10px #eeff00;
-    border: 2px solid #0000ff;
+    box-shadow: 0 0 10px #f5f5dc;
+    border: 2px solid #000000;
     border-radius: 6px;
 }
 
@@ -190,7 +183,7 @@ address {
 
 section:nth-of-type(1) {
     background-color: #f5f5dc;
-    border: 2px solid black;
+    border: 2px solid #000000;
     border-radius: 8px;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -204,7 +197,7 @@ section:nth-of-type(1) {
     grid-template-areas:
         "heading heading heading"
         "leftimg image rightimg";
-    color: black;
+    color: #000000;
     font-size: 1.25rem;
     align-items: start;
 }
