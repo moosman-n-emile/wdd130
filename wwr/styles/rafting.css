@@ -157,7 +157,7 @@ article {
 
 address {
     font-family: var(--body-font);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-style: normal;
     line-height: 1.2;
     color: var(--accent1-color);
@@ -190,6 +190,14 @@ address {
 }
 
 section:nth-of-type(1) {
+    background-color: lightcyan;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.history {
     grid-area: history;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -197,14 +205,36 @@ section:nth-of-type(1) {
     grid-template-areas:
         "heading heading heading"
         "leftimg image rightimg";
-    background-color: lightcyan;
     color: black;
     font-size: 1.25rem;
     align-items: start;
-    border: 2px solid black;
-    border-radius: 8px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+}
+
+.contact {
+    grid-area: history;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "map"
+        "form";
+    /* flex-direction: row; */
+}
+
+.map {
+    grid-area: map;
+    display: grid;
+    margin: 30px 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    display: flex;
+    justify-self: center;
+    width: 120%;
+    height: 400px;
+    border: 3px solid green;
+    align-self: flex-end;
 }
 
 /* Centered Heading */
@@ -308,4 +338,49 @@ section:nth-of-type(2) figcaption {
 
 .socialmedia img:hover {
     transform: scale(1.15);
+}
+
+/* Form */
+form {
+    /* grid-area: form;
+    display: grid; */
+    background-color: beige;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 450px;
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    column-span: 10;
+    width: 100%;
+    height: 15%;
+}
+
+option {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: brown;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    border: solid 2px darkred;
+    border-radius: 8px;
+
 }
