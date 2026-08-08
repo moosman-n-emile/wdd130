@@ -181,15 +181,12 @@ address {
     order: 1;
 }
 
-section:nth-of-type(1) {
+section.history {
     background-color: #f5f5dc;
     border: 2px solid #000000;
     border-radius: 8px;
     margin-top: 2px;
     margin-bottom: 2px;
-}
-
-.history {
     grid-area: history;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -202,39 +199,50 @@ section:nth-of-type(1) {
     align-items: start;
 }
 
-section.contact {
+.contact {
     grid-area: history;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "map"
-        "form";
+        "map form";
     background-color: #f5f5dc;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    margin-bottom: 2px;
+    justify-items: center;
 }
 
 .map {
     grid-area: map;
-    display: grid;
-    margin: 30px 2px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 2px;
     justify-content: center;
+}
+
+section.contact .map img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto;
 }
 
 iframe {
     display: flex;
     justify-self: center;
-    width: 120%;
-    height: 400px;
-    border: 3px solid #000000;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
     border-radius: 8px;
 }
 
 /* Centered Heading */
-section:nth-of-type(1) h2 {
+section.history h2 {
     grid-area: heading;
 }
 
 /* Image in the middle */
-section:nth-of-type(1) img {
+section.history img {
     grid-area: image;
     justify-self: center;
     align-self: center;
@@ -258,7 +266,7 @@ section:nth-of-type(1) img {
     text-align: justify;
 }
 
-section:nth-of-type(2) {
+section.adventure {
     /* Adventure Awaits section */
     grid-area: adventure;
     background-color: #f5f5dc;
@@ -272,11 +280,11 @@ section:nth-of-type(2) {
     margin-bottom: 1px;
 }
 
-section:nth-of-type(2) h2 {
+section.adventure h2 {
     width: 100%;
 }
 
-section:nth-of-type(2) figure {
+section.adventure figure {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,7 +294,7 @@ section:nth-of-type(2) figure {
     padding: 1px;
 }
 
-section:nth-of-type(2) img {
+section.adventure img {
     width: 80%;
     height: 110px;
     object-fit: cover;
@@ -301,7 +309,7 @@ section.employee img {
     border: 2px solid #000000;
 }
 
-section:nth-of-type(2) figcaption {
+section.adventure figcaption {
     margin-top: 8px;
     font-size: 0.9rem;
     font-weight: 600;
@@ -333,6 +341,7 @@ section:nth-of-type(2) figcaption {
 
 /* Form */
 .form {
+    grid-area: form;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -399,6 +408,9 @@ textarea {
     padding: 0.5rem;
     border: 2px solid #000000;
     border-radius: 8px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 button {
@@ -410,4 +422,226 @@ button {
     border: solid 2px #000000;
     border-radius: 8px;
     width: 100%;
+}
+
+.newsletter_form button {
+    width: 40%;
+    text-align: center;
+    padding: 1px;
+}
+
+.hero article.newsletter {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 250px;
+    background-color: rgba(0, 0, 255, 0.85);
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px;
+    margin: 0;
+}
+
+.newsletter_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.newsletter_form p {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.newsletter_form label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.newsletter_form input {
+    flex: 1;
+    padding: 5px 4px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+div.index_section {
+    grid-area: history;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "scenery cta";
+    /* background-color: #f5f5dc; */
+    height: 220px;
+    margin-top: 1px;
+    gap: 3px;
+}
+
+section.scenery,
+section.cta {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid #000000;
+
+}
+
+section.scenery {
+    grid-area: scenery;
+}
+
+section.cta {
+    grid-area: cta;
+}
+
+section.cta h2,
+section.scenery h2 {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-shadow:
+        -1px -1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+}
+
+section.scenery ul {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 1;
+    background-color: rgba(0, 0, 255, 0.85);
+    color: #ffffff;
+    margin: 0;
+    padding: 4px 4px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+section.scenery ul li {
+    margin: 2px 0;
+}
+
+section.cta img,
+section.scenery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cta-link {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.cta-link:hover {
+    transform: translateX(-50%) scale(1.05);
+    background-color: #a00;
+}
+
+/* My Trips table */
+.trip_table {
+    width: 90%;
+    /* border-collapse: collapse; */
+    margin: 1rem 0;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.trip_table th,
+.trip_table td {
+    padding: 1px 1px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.trip_table th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+
+.most_popular {
+    height: auto;
+}
+
+.most_popular img {
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.most_popular ul {
+    width: 90%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 1px 10px;
+    background-color: rgba(0, 0, 255, 0.85);
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #000;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.most_popular .contact_cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 8px 0 0;
+    padding: 0;
+    font: var(--body-font);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.contact_cta a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    font: var(--body-font);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 6px 14px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.2s;
 }

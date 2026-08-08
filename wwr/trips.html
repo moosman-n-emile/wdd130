@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="This page will display the different rafting trips available. Visitors can choose from 3 different trips offered by Rafting Adventures.">
+      content="This page will display the different rafting trips available. Visitors can choose from 5 different trips offered by Rafting Adventures.">
     <meta name="author" content="Emile Moosman">
     <title>Trips: Rafting Adventures</title>
     <link rel="stylesheet" href="../wwr/styles/rafting.css">
@@ -26,92 +26,83 @@
     </header>
     <main>
         <div>
-            <h1>Rafting Adventures</h1>
-            <article>
-                <address>
-                    123 Main River Street<br>
-                    Whitewater, Colorado<br>
-                    Phone: +1 111 222 3344<br>
-                    Email: <a
-                      href="mailto:info@raftingadventures.com">info@raftingadventures.com</a><br>
-                </address>
-            </article>
+            <h1>Trip information</h1>
         </div>
         <section class="contact">
-            <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3351.2732907967593!2d151.7115677622312!3d-32.86448790797943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1785582729465!5m2!1sen!2sau"
-                  allowfullscreen="" loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin">
-                </iframe>
-            </div>
+            <section class="map most_popular">
+                <h2>Most Popular - Sandy Falls Rapids</h2>
+                <img src="images/figure_3.webp" alt="Sandy Falls Rapids">
+                <ul>
+                    <li>Action Packed Rapids</li>
+                    <li>Best Views</li>
+                    <li>Ultimate Teamwork experience!</li>
+                </ul>
 
-            <form class="form">
-                <fieldset class="text_label">
-                    <label>
-                        Name
-                        <input type="text" id="name" name="name" placeholder="Enter Name">
-                    </label>
+                <p class="contact_cta">For more inquiries, <a href="contact.html">click here</a></p>
+            </section>
 
-                    <label>
-                        Email
-                        <input type="email" id="email" name="email" placeholder="Enter Email">
-                    </label>
-                </fieldset>
+            <table class="trip_table">
+                <thead>
+                    <tr>
+                        <th>Trip</th>
+                        <th>Days</th>
+                        <th>Cost per Person</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sandy Falls Rapids</td>
+                        <td>1</td>
+                        <td>$80</td>
+                    </tr>
 
-                <fieldset class="radio">
-                    <div class="radio_message">Message purpose</div>
+                    <tr>
+                        <td>The Washing Machine</td>
+                        <td>3</td>
+                        <td>$200</td>
+                    </tr>
 
-                    <div class="radio_buttons">
-                        <label>
-                            <input type="radio" id="general" name="purpose" value="general" checked>
-                            General Inquiry
-                        </label>
+                    <tr>
+                        <td>Spring Break Fever</td>
+                        <td>4</td>
+                        <td>$220</td>
+                    </tr>
 
-                        <label>
-                            <input type="radio" id="social" name="purpose" value="social">
-                            Reservation Question
-                        </label>
+                    <tr>
+                        <td>De la Montaña de Roca</td>
+                        <td>5</td>
+                        <td>$250</td>
+                    </tr>
 
-                        <label>
-                            <input type="radio" id="search" name="purpose" value="search">
-                            Website Suggestion
-                        </label>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <label for="message" class="message_label">Message</label>
-                    <textarea id="message" name="message" placeholder="Type here"></textarea>
-
-                    <div class="subscription">
-                        <input type="checkbox" id="subscribe" name="subscribe" checked>
-                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                    </div>
-
-                    <button type="submit">Get In Touch!</button>
-                </fieldset>
-            </form>
+                    <tr>
+                        <td>Snowy River Escape</td>
+                        <td>6</td>
+                        <td>$280</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
-        <section class="employee">
-            <h2>We Are Here to Serve You</h2>
+        <section class="adventure">
+            <h2>Top Trips</h2>
             <figure>
-                <img src="images/employee_one.webp" alt="Picture of Company President - Sandy">
-                <figcaption>Sandy - President</figcaption>
+                <img src="images/figure_4.webp" alt="De la Montaña de Roca">
+                <figcaption>De la Montaña de Roca</figcaption>
+                <p>Tackle the Montaña de Roca river with its sharp bends & twists.</p>
             </figure>
 
             <figure>
-                <img src="images/employee_two.webp"
-                  alt="Picture of Company General Manager - James">
-                <figcaption>James - Manager</figcaption>
+                <img src="images/figure_5.webp" alt="Snowy River Escape">
+                <figcaption>Snowy River Escape</figcaption>
+                <p>Experience the challenging & aggressive Snowy River.</p>
             </figure>
 
             <figure>
-                <img src="images/employee_three.webp"
-                  alt="Picture of Customer Support Manager - Ramos">
-                <figcaption>Ramos - Customer Support</figcaption>
+                <img src="images/figure_1.webp" alt="Spring Break Fever">
+                <figcaption>Spring Break Fever</figcaption>
+                <p>A must for students looking for good clean fun!</p>
             </figure>
+
         </section>
     </main>
     <footer>
